@@ -3,4 +3,4 @@ class users {
   ensure => present, 
   } 
   } 
-  include users::admins
+ 
