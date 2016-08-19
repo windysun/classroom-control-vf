@@ -49,5 +49,10 @@ notify { "This is a ${vmname} virtual machine.": }
 }
 $message = hiera('message')
 notify { $message: }
+
+class { 'nginx':
+root => '/var/www/html',
+}
+
 }
 
